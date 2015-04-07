@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="3"
+    android:background="#ff000000">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:textSize="50dp"
+            android:id="@+id/dialDisplay"
+            android:background="#ff64648c"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rows"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/oneToThree"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="1"
+                android:id="@+id/dial1"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="1"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="2"
+                android:id="@+id/dial2"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="2"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="3"
+                android:id="@+id/dial3"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="3"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourToSix"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="4"
+                android:id="@+id/dial4"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="4"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="5"
+                android:id="@+id/dial5"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="5"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="6"
+                android:id="@+id/dial6"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="6"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sevenToNine"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="7"
+                android:id="@+id/dial7"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="7"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="8"
+                android:id="@+id/dial8"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="8"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="9"
+                android:id="@+id/dial9"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="9"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/starToHash"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="BACK"
+                android:id="@+id/dialBack"
+                android:layout_margin="1dp"
+                android:onClick="updateDialBack"
+                android:tag="*"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="0"
+                android:id="@+id/dial0"
+                android:layout_margin="1dp"
+                android:onClick="updateDial"
+                android:tag="0"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="DIAL"
+                android:id="@+id/dialSubmit"
+                android:layout_margin="1dp"
+                android:onClick="dial"
+                android:tag="#"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
